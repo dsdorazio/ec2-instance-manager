@@ -1,0 +1,142 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-063f0d61d31a65574",
+                    "InstanceId": "i-0bbb0c6c8ed62fe83",
+                    "InstanceType": "t2.medium",
+                    "KeyName": "dan-mtln-rs",
+                    "LaunchTime": "2019-01-21 18:07:32+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "eu-west-1b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-17-130.eu-west-1.compute.internal",
+                    "PrivateIpAddress": "172.31.17.130",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-52-49-229-227.eu-west-1.compute.amazonaws.com",
+                    "PublicIpAddress": "52.49.229.227",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-a8d4e8df",
+                    "VpcId": "vpc-27183a42",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2019-01-08 17:54:05+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-060b042dc284bec30"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::557249109363:instance-profile/METLDevRole",
+                        "Id": "AIPAIRXIGVLIWUWXFDXKQ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-52-49-229-227.eu-west-1.compute.amazonaws.com",
+                                "PublicIp": "52.49.229.227"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2019-01-08 17:54:04+00:00",
+                                "AttachmentId": "eni-attach-00c344496fddbe09b",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "dan-rs-1.36",
+                                    "GroupId": "sg-07214f044253861f0"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "06:29:68:6e:35:78",
+                            "NetworkInterfaceId": "eni-01fee187ed2303cba",
+                            "OwnerId": "557249109363",
+                            "PrivateDnsName": "ip-172-31-17-130.eu-west-1.compute.internal",
+                            "PrivateIpAddress": "172.31.17.130",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-52-49-229-227.eu-west-1.compute.amazonaws.com",
+                                        "PublicIp": "52.49.229.227"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-17-130.eu-west-1.compute.internal",
+                                    "PrivateIpAddress": "172.31.17.130"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-a8d4e8df",
+                            "VpcId": "vpc-27183a42"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "dan-rs-1.36",
+                            "GroupId": "sg-07214f044253861f0"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "dan-rs-1.37"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 2,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    }
+                }
+            ],
+            "OwnerId": "557249109363",
+            "ReservationId": "r-0ffe6c4ae1cb23838"
+        }
+    ],
+    "ResponseMetadata": {
+        "RequestId": "e4d15590-5c4b-4714-a750-15a5827b4a3b",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "transfer-encoding": "chunked",
+            "vary": "Accept-Encoding",
+            "date": "Mon, 21 Jan 2019 20:48:08 GMT",
+            "server": "AmazonEC2"
+        },
+        "RetryAttempts": 0
+    }
+}

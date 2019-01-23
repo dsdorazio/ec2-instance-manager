@@ -5,11 +5,10 @@ from ec2_instance_manager.ec2instance import Ec2Instance
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-i', '--instance', 
+        '-i', '--instance-id', 
         type=str, 
-        dest='instance', 
-        default='i-0bbb0c6c8ed62fe83', # TODO dan-rs-1.37 remove
-        help='instance id'
+        dest='instance_id', 
+        help='ec2 instance_id'
     )
 
     parser.add_argument(
@@ -21,7 +20,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     action = args.action
-    instance_ids = args.instance.split(',')
+    instance_ids = args.instance_id.split(',')
 
     chrome_path = ""    
     if os.name == 'nt':
